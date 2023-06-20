@@ -1,0 +1,6 @@
+postgresql_version: 15
+postgresql_admin_user: postgres
+postgresql_databases: []
+postgresql_users: []
+postgresql_encoding: UTF-8
+postgresql_locale: en_US.UTF-8
