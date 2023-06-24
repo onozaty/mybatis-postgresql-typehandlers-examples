@@ -1,4 +1,4 @@
-package com.github.onozaty.mybatis.example.repository;
+package com.github.onozaty.mybatis.pg.example.repository;
 
 import java.util.List;
 
@@ -8,7 +8,7 @@ import org.apache.ibatis.annotations.Results;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 
-import com.github.onozaty.mybatis.example.domain.ListRecord;
+import com.github.onozaty.mybatis.pg.example.domain.ListRecord;
 import com.github.onozaty.mybatis.pg.type.list.BooleanListTypeHandler;
 import com.github.onozaty.mybatis.pg.type.list.DoubleListTypeHandler;
 import com.github.onozaty.mybatis.pg.type.list.FloatListTypeHandler;

@@ -1,4 +1,4 @@
-package com.github.onozaty.mybatis.example.domain;
+package com.github.onozaty.mybatis.pg.example.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -12,9 +12,9 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class JsonData {
+public class JsonRecord {
 
     private int id;
 
-    private String name;
+    private JsonData json;
 }

@@ -1,4 +1,4 @@
-package com.github.onozaty.mybatis.example.repository;
+package com.github.onozaty.mybatis.pg.example.repository;
 
 import java.util.List;
 
@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 
-import com.github.onozaty.mybatis.example.domain.JsonRecord;
+import com.github.onozaty.mybatis.pg.example.domain.JsonRecord;
 
 /**
  * @author onozaty

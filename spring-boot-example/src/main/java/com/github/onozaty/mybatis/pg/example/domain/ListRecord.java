@@ -1,4 +1,4 @@
-package com.github.onozaty.mybatis.example.domain;
+package com.github.onozaty.mybatis.pg.example.domain;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.github.onozaty.mybatis.example.repository;
+package com.github.onozaty.mybatis.pg.example.repository;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -9,8 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.github.onozaty.mybatis.example.domain.JsonData;
-import com.github.onozaty.mybatis.example.domain.JsonRecord;
+import com.github.onozaty.mybatis.pg.example.domain.JsonData;
+import com.github.onozaty.mybatis.pg.example.domain.JsonRecord;
 
 @SpringBootTest
 @Transactional
