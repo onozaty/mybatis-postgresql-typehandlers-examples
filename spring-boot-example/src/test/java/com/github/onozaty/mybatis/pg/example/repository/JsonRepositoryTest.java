@@ -25,6 +25,7 @@ public class JsonRepositoryTest {
         JsonData data = JsonData.builder()
                 .id(1)
                 .name("Taro")
+                .nums(List.of(1, 2, 3))
                 .build();
 
         JsonRecord record = JsonRecord.builder()
@@ -43,7 +44,7 @@ public class JsonRepositoryTest {
         List<JsonRecord> insertedRecords = List.of(
                 jsonRepository.insert(
                         JsonRecord.builder()
-                                .json(JsonData.builder().id(1).name("Taro").build())
+                                .json(JsonData.builder().id(1).name("Taro").nums(List.of(1, 2, 3)).build())
                                 .build()),
                 jsonRepository.insert(
                         JsonRecord.builder()
@@ -51,7 +52,7 @@ public class JsonRepositoryTest {
                                 .build()),
                 jsonRepository.insert(
                         JsonRecord.builder()
-                                .json(JsonData.builder().id(3).name("Jack").build())
+                                .json(JsonData.builder().id(3).name("Jack").nums(List.of(3)).build())
                                 .build()));
 
         List<JsonRecord> records = jsonRepository.selectAll();
@@ -65,7 +66,7 @@ public class JsonRepositoryTest {
 
         JsonRecord insertedRecord = jsonRepository.insert(
                 JsonRecord.builder()
-                        .json(JsonData.builder().id(1).name("Taro").build())
+                        .json(JsonData.builder().id(1).name("Taro").nums(List.of(1, 2, 3)).build())
                         .build());
 
         JsonRecord record = jsonRepository.select(insertedRecord.getId());
@@ -78,14 +79,14 @@ public class JsonRepositoryTest {
 
         JsonRecord before = jsonRepository.insert(
                 JsonRecord.builder()
-                        .json(JsonData.builder().id(1).name("Taro").build())
+                        .json(JsonData.builder().id(1).name("Taro").nums(List.of(1, 2, 3)).build())
                         .build());
 
         int id = before.getId();
 
         JsonRecord after = JsonRecord.builder()
                 .id(id)
-                .json(JsonData.builder().id(100).name("XYZ").build())
+                .json(JsonData.builder().id(100).name("XYZ").nums(List.of(4)).build())
                 .build();
 
         jsonRepository.update(after);
