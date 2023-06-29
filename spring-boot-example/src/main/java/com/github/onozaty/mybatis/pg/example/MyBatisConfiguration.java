@@ -11,7 +11,7 @@ import com.github.onozaty.mybatis.pg.type.json.JsonTypeHandler;
 public class MyBatisConfiguration {
 
     @Bean
-    ConfigurationCustomizer mybatisConfigurationCustomizer() {
+    public ConfigurationCustomizer mybatisConfigurationCustomizer() {
         return (configuration) -> {
             configuration.getTypeHandlerRegistry().register(JsonData.class, JsonTypeHandler.class);
         };
